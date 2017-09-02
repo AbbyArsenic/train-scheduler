@@ -28,6 +28,14 @@
               </tr>
             </thead>
             <tbody id="current-trains">
+              <tr>
+                <td>Hogwarts Express</td>
+                <td>Hogsmeade</td>
+                <td>9¾</td>
+                <td>Annual</td>
+                <td>1 September 11:00am</td>
+                <td id="hogwartsTime"></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -50,20 +58,22 @@
               <input type="text" class="form-control" id="platformInput">
             </div>
             <div class="form-group col-md-4">
-              <label for="freqInput">Frequency</label>
+              <label for="freqInput">Frequency (min.)</label>
               <input type="number" class="form-control" id="freqInput">
             </div>
             <div class="form-group col-md-4">
               <label for="startInput">Line Start Time</label>
               <input type="time" class="form-control" id="startInput">
             </div>
-            <button type="submit" class="btn btn-default" id="submit-employee">Submit</button>
+            <button type="submit" class="btn btn-default" id="submit-train">Submit</button>
           </form>
         </div>
 
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
     <script type="text/javascript" src="javascript/jqueryCode.js"></script>
   </body>
 </html>
